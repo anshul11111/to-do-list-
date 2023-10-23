@@ -1,0 +1,183 @@
+/* Reset some default styles and set background color */
+body {
+  background: #b16502;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset styles for all elements and use border-box for box sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the main content section */
+.main-section {
+  background: transparent;
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+/* Styles for the section used to add new items */
+.add-section {
+  width: 100%;
+  height: auto;
+  /* Auto height, expands based on content */
+  background: #b67c30;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styles for input element within the add section */
+.add-section input {
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin: 10px auto;
+  border: 2px solid #f10000;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Styles for button element within the add section */
+.add-section button {
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: #3bcf16;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the add button */
+.add-section button:hover {
+  box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc;
+  opacity: 0.7;
+}
+
+/* Styles for the plus icon inside the button */
+.add-section button span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+/* Styles for displaying error messages */
+#errorMes {
+  display: block;
+  background: #f2dede;
+  width: 95%;
+  margin: 0 auto;
+  color: rgb(139, 19, 19);
+  padding: 10px;
+  height: 35px;
+}
+
+/* Styles for the section that displays the to-do items */
+.show-todo-section {
+  width: 100%;
+  background: #b67c30;
+  margin: 30px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styles for individual to-do items */
+.todo-item {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ff00ea, #464242, #00ffbf);
+  background-size: 600% 600%;
+  animation: AnimationName 5s ease infinite;
+}
+
+/* Keyframes for the background animation */
+@keyframes AnimationName {
+  0% {
+    background-position: 34% 0;
+  }
+
+  50% {
+    background-position: 67% 100%;
+  }
+
+  100% {
+    background-position: 34% 0;
+  }
+}
+
+/* Styles for the to-do item's title */
+.todo-item h2 {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* Styles for additional information in the to-do item */
+.todo-item small {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  color: rgb(255, 255, 255);
+  padding-left: 30px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+/* Styles for the remove button in to-do items */
+.remove-to-do {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  font-family: sans-serif;
+  color: rgb(255, 21, 0);
+  text-decoration: none;
+  text-align: right;
+  padding: 0 5px 8px 0;
+  border-radius: 50%;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+/* Hover effect for the remove button */
+.remove-to-do:hover {
+  background: rgb(139, 97, 93);
+  color: #fff;
+}
+
+/* Styles for checked (completed) to-do items */
+.checked {
+  color: rgb(63, 95, 10);
+  text-decoration: line-through;
+}
+
+/* Styles for input elements within to-do items */
+.todo-item input {
+  margin: 0 5px;
+}
+
+/* Styles for the empty state message */
+.empty {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ccc;
+}
