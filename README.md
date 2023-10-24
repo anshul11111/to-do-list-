@@ -1,2 +1,2 @@
-## PHP (PDO), MYSQL and JQuery AJAX Full Project from Scratch.
+## PHP (PDO), MYSQL Full Project from Scratch.
 
